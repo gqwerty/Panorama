@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "panorama"
+version = "1.0.0"
+description = "파노라마 영상 및 모자이크 영상을 생성하는 Python GUI 애플리케이션"
+authors = [
+    { name = "정채원" }
+]
+license = { text = "MIT" }
+dependencies = [
+    "PyQt6==6.5.1",
+    "opencv-python==4.8.0.76",
+    "opencv-contrib-python==4.8.0.76",
+    "Pillow==10.0.0"
+]
+readme = "README.md"
+keywords = ["image processing", "GUI", "panorama", "mosaic", "PyQt6", "OpenCV"]
+repository = ""
+requires-python = ">=3.9"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "black>=23.0",
+    "flake8>=6.0",
+    "mypy>=1.0"
+]
+
+[tool.setuptools]
+packages = ["panorama"]
+
+[tool.setuptools.package-data]
+panorama = ["*.png", "*.jpg", "*.jpeg"]
