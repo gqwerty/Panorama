@@ -18,7 +18,7 @@ dependencies = [
 ]
 readme = "README.md"
 keywords = ["image processing", "GUI", "panorama", "mosaic", "PyQt6", "OpenCV"]
-repository = ""
+repository = "https://github.com/gqwerty/Panorama"
 requires-python = ">=3.9"
 
 [project.optional-dependencies]
